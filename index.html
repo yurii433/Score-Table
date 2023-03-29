@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="/Github projects/Score-Table/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="container-one">
+            <div class="two-containers-wrap">
+                <h3>HOME</h3>
+                <div class="score-num" id="home-score-num"><h3>0</h3></div>
+                <div class="score-add">
+                <div><button onclick="addScore('home', 1)">+1</button></div>
+                <div><button onclick="addScore('home', 2)">+2</button></div>
+                <div><button onclick="addScore('home', 3)">+3</button></div>
+                <div><button onclick="addScore('home', -1)">-1</button></div>
+                </div>
+            </div>
+            <div class="two-containers-wrap">
+                <h3>GUEST</h3>
+                <div class="score-num" id="guest-score-num"><h3>0</h3></div>
+                <div class="score-add">
+                <div><button onclick="addScore('guest', 1)">+1</button></div>
+                <div><button onclick="addScore('guest', 2)">+2</button></div>
+                <div><button onclick="addScore('guest', 3)">+3</button></div>
+                <div><button onclick="addScore('guest', -1)">-1</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="fouls-wrap">
+                <div class="header"><h4>FOULS</h4></div> 
+                <div class="counters fouls-counters">
+                    <div class="home-counter">
+                        <div class="score-num fouls-num" id="home-fouls-num"><h3>0</h3></div>
+                        <div><button class="add-foul-button" onclick="addFoul('home', 1)">+1</button></div>
+                    </div>
+                    <div class="guest-counter">
+                        <div class="score-num fouls-num" id="guest-fouls-num"><h3>0</h3></div>
+                        <div><button class="add-foul-button" onclick="addFoul('guest', 1)">+1</button></div>
+                    </div>
+                </div>
+        </div>
+            
+        <div class="container-two"> 
+            <button class="restart" id="restart" onclick="restart()">New game</button>
+        </div>
+    </div>
+    <script src="/Github projects/Score-Table/index.js"></script>
+  </body>
+</html>
